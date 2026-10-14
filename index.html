@@ -1,26 +1,15 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Open Fellow in Edge</title>
+<title>Get Fellow</title>
 <style>
 body{font-family:system-ui,sans-serif;text-align:center;padding:3rem 1.5rem}
-a.btn{display:block;max-width:20rem;margin:1rem auto 0;padding:.9rem 1.6rem;border-radius:8px;background:#0f6cbd;color:#fff;text-decoration:none;font-size:1.1rem}
-a.alt{background:#555}
+a.btn{display:inline-block;margin-top:1.5rem;padding:.9rem 1.6rem;border-radius:8px;background:#0f6cbd;color:#fff;text-decoration:none;font-size:1.1rem}
 small{display:block;margin-top:1.5rem;color:#666}
 </style></head>
 <body>
-<h2>Open Fellow in Edge</h2>
-<a id="a" class="btn" href="#">Open in Edge</a>
-<a id="b" class="btn alt" href="#">Open in Edge (option 2)</a>
-<small id="fb"></small>
-<script>
-var APP_ID = "17cfc6a7-5950-492f-a02a-23945ff24ff3";
-var path = "portal.manage.microsoft.com/webcp/apps/" + APP_ID;
-var web = "https://" + path;
-document.getElementById("a").href = "microsoft-edge-https://" + path;
-document.getElementById("b").href = "microsoft-edge:" + web;
-document.getElementById("fb").innerHTML =
-  'Neither opening? <a href="companyportal://apps">Open Company Portal</a> &middot; ' +
-  '<a href="' + web + '">Open in your default browser</a>';
-</script>
+<h2>Get Fellow</h2>
+<p>Opens Company Portal. Find <b>Fellow</b> and tap it.</p>
+<a class="btn" href="companyportal://apps">Open Company Portal</a>
+<small>Not opening? <a href="https://portal.manage.microsoft.com/webcp/apps/17cfc6a7-5950-492f-a02a-23945ff24ff3">Open the web Company Portal</a></small>
 </body></html>
